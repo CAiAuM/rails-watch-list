@@ -1,0 +1,12 @@
+<div class="row justify-content-center m-5">
+  <div class="col-4 bg-light p-4">
+    <h1 class="mb-3">Inform a new List:</h1>
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <div class="d-grid">
+        <%= f.submit "Create List", class: 'btn btn-success' %>
+        <%= link_to "Back",  root_path, class: 'btn btn-primary mt-2' %>
+      </div>
+    <% end %>
+  </div>
+</div>
