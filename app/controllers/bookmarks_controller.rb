@@ -1,5 +1,6 @@
 class BookmarksController < ApplicationController
   before_action :set_bookmark, only: [:destroy]
+
   def new
     @list = List.find(params[:list_id])
     @bookmark = Bookmark.new
