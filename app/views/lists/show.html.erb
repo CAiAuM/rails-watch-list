@@ -15,7 +15,7 @@
             </div>
             <h6 class="mt-2"><%= bookmark.movie.title %></h6>
             <p class="small"><%= bookmark.movie.overview %></p>
-            <p class="small"><%= bookmark.comment %></p>
+            <p class="small"><i class="fa-solid fa-quote-left"></i> <%= bookmark.comment %></p>
             <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "text-decoration-none text-danger small" %>
           </div>
         </div>
